@@ -1,0 +1,17 @@
+cmake_minimum_required( VERSION 3.11 )
+
+project(vaapi_bypass NONE)
+
+include(ExternalProject)
+  ExternalProject_Add(vaapi_bypass_windows
+    GIT_REPOSITORY    ${BYPASS_REPO}
+    GIT_TAG           origin/bypass_windows
+    #URL               C:/Project/GitLab/vaapi_bypass
+    #SOURCE_SUBDIR     cmake.win
+    SOURCE_DIR        "${CMAKE_BINARY_DIR}/vaapi_bypass_windows-src"
+    BINARY_DIR        "${CMAKE_BINARY_DIR}/vaapi_bypass_windows-build"
+    CONFIGURE_COMMAND ""
+    BUILD_COMMAND     ""
+    INSTALL_COMMAND   ""
+    TEST_COMMAND      ""
+   )

@@ -1,0 +1,68 @@
+LIBMFXHW_1.0 {
+  global:
+    MFXInit;
+    MFXClose;
+    MFXQueryIMPL;
+    MFXQueryVersion;
+
+    MFXJoinSession;
+    MFXDisjoinSession;
+    MFXCloneSession;
+    MFXSetPriority;
+    MFXGetPriority;
+
+    MFXVideoCORE_SetFrameAllocator;
+    MFXVideoCORE_SetHandle;
+    MFXVideoCORE_GetHandle;
+    MFXVideoCORE_SyncOperation;
+
+    MFXVideoENCODE_Query;
+    MFXVideoENCODE_QueryIOSurf;
+    MFXVideoENCODE_Init;
+    MFXVideoENCODE_Reset;
+    MFXVideoENCODE_Close;
+    MFXVideoENCODE_GetVideoParam;
+    MFXVideoENCODE_GetEncodeStat;
+    MFXVideoENCODE_EncodeFrameAsync;
+
+    MFXVideoDECODE_Query;
+    MFXVideoDECODE_DecodeHeader;
+    MFXVideoDECODE_QueryIOSurf;
+    MFXVideoDECODE_Init;
+    MFXVideoDECODE_Reset;
+    MFXVideoDECODE_Close;
+    MFXVideoDECODE_GetVideoParam;
+    MFXVideoDECODE_GetDecodeStat;
+    MFXVideoDECODE_SetSkipMode;
+    MFXVideoDECODE_GetPayload;
+    MFXVideoDECODE_DecodeFrameAsync;
+
+    MFXVideoVPP_Query;
+    MFXVideoVPP_QueryIOSurf;
+    MFXVideoVPP_Init;
+    MFXVideoVPP_Reset;
+    MFXVideoVPP_Close;
+
+    MFXVideoVPP_GetVideoParam;
+    MFXVideoVPP_GetVPPStat;
+    MFXVideoVPP_RunFrameVPPAsync;
+
+  local:
+    *;
+};
+
+LIBMFXHW_1.14 {
+  global:
+    MFXInitEx;
+} LIBMFXHW_1.0;
+
+LIBMFXHW_1.19 {
+  global:
+    MFXVideoCORE_QueryPlatform;
+    MFXQueryImplsDescription;
+    MFXReleaseImplDescription;
+    MFXMemory_GetSurfaceForVPP;
+    MFXMemory_GetSurfaceForEncode;
+    MFXMemory_GetSurfaceForDecode;
+    MFXInitialize;
+} LIBMFXHW_1.14;
