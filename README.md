@@ -1,3 +1,14 @@
+DISCONTINUATION OF PROJECT
+
+This project will no longer be maintained by Intel.
+
+Intel has ceased development and contributions including, but not limited to, maintenance, bug fixes, new releases, or updates, to this project.  
+
+Intel no longer accepts patches to this project.
+
+If you have an ongoing need to use this project, are interested in independently developing it, or would like to maintain patches for the open source software community, please create your own fork of this project.  
+
+Contact: webadmin@linux.intel.com
 # Intel® Media SDK
 Intel® Media SDK for Intel Vision Processing Units (VPUs)  provides a plain C API to access hardware-accelerated video decode, encode and filtering on VPU graphics hardware platforms. Implementation written in C++ 11.
 
